@@ -41,7 +41,7 @@ namespace FluentMigrator.Builders.Create.Table
         public ColumnDefinition CurrentColumn { get; set; }
         public ForeignKeyDefinition CurrentForeignKey { get; set; }
 
-        public ICreateTableWithColumnSyntax InSchema(string schemaName)
+        public ICreateTableWithColumnOrSchemaSyntax InSchema(string schemaName)
         {
             Expression.SchemaName = schemaName;
             return this;
